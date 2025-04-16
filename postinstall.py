@@ -1,4 +1,4 @@
 import subprocess
 
-# Install Playwright browsers in Python context
+print("Installing Playwright browsers for Python...")
 subprocess.run(["python", "-m", "playwright", "install", "--with-deps"], check=True)
