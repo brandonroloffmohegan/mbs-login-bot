@@ -20,7 +20,7 @@ async def get_cookies():
         # Wait until the network is idle to ensure resources have loaded
         await page.wait_for_load_state("networkidle")
         # Wait explicitly for the username input to appear (timeout set to 60000ms)
-        await page.wait_for_selector('input[name="username"]', timeout=60000)
+        await page.wait_for_selector('input[name="username"]', timeout=150000)
 
         # Now fill in the login details and click submit
         await page.fill('input[name="username"]', 'mmbilling@gomohegan.com')
